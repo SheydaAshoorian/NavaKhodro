@@ -5,6 +5,9 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'pages.home')->name('home');
 Route::view('/buy', 'pages.buy')->name('buy');
 Route::view('/sell', 'pages.sell')->name('sell');
+Route::view('/about', 'pages.sell')->name('about');
+Route::view('/blog', 'pages.sell')->name('blog');
+
 Route::view('/nava_service', 'pages.nava_service')->name('nava_service');
 Route::view('/service/part-search', 'pages.part-search')->name('part-search');
 Route::view('/service/booking', 'pages.booking')->name('booking');
