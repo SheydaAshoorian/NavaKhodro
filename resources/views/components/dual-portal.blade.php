@@ -13,8 +13,10 @@
                 <!-- بخش بالایی کارت با عکس یا گرادیانت -->
                 <div class="h-48 bg-gradient-to-br from-blue-500 to-blue-700 relative overflow-hidden flex items-center justify-center">
                     <!-- لایه تزئینی -->
-                    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20"></div>
-                    <div class="relative z-10 text-7xl group-hover:scale-110 transition-transform duration-500">🚗</div>
+                    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+                    <div class="relative z-10 text-7xl group-hover:scale-110 transition-transform duration-500">
+                        <img src="{{ asset('images/sells.jpg') }}" >
+                    </div>
                     <!-- بج گوشه -->
                     <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md text-white text-xs font-bold px-3 py-1 rounded-full border border-white/30">
                         بازار خودرو
@@ -40,8 +42,10 @@
                 <!-- بخش بالایی کارت با عکس یا گرادیانت -->
                 <div class="h-48 bg-gradient-to-br from-slate-700 to-slate-900 relative overflow-hidden flex items-center justify-center">
                     <!-- لایه تزئینی -->
-                    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20"></div>
-                    <div class="relative z-10 text-7xl group-hover:scale-110 transition-transform duration-500">🔧</div>
+                    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] "></div>
+                    <div class="relative z-10 text-7xl group-hover:scale-110 transition-transform duration-500">
+                        <img src="{{ asset('images/parts.jpg') }}" >
+                    </div>
                     <!-- بج گوشه -->
                     <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md text-white text-xs font-bold px-3 py-1 rounded-full border border-white/30">
                         خدمات پس از فروش

@@ -71,7 +71,7 @@
 
             <!-- کارت ۴: اکستریم -->
             <a href="https://xtrim.navakhodro.com/" target="_blank" class="group relative h-64 rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer">
-                <img src="{{ asset('images/xtrim-bg.jpg') }}" alt="ثبت نام اکستریم" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <img src="{{ asset('images/xtrim.jpg') }}" alt="ثبت نام اکستریم" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent"></div>
                 <div class="absolute inset-0 p-6 flex flex-col justify-end">
                     <div class="flex items-center justify-between">
@@ -88,7 +88,7 @@
 
             <!-- کارت ۵: تیگارد ایکس ۳۵ پلاس -->
             <a href="https://navakhodro.com/sale/tigard-x35plus" target="_blank" class="group relative h-64 rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer">
-                <img src="{{ asset('images/tigard-bg.jpg') }}" alt="ثبت نام تیگارد" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <img src="{{ asset('images/tigard.png') }}" alt="ثبت نام تیگارد" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent"></div>
                 <div class="absolute inset-0 p-6 flex flex-col justify-end">
                     <div class="flex items-center justify-between">
@@ -105,7 +105,7 @@
 
             <!-- کارت ۶: ام جی -->
             <a href="https://mg.navakhodro.com/" target="_blank" class="group relative h-64 rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer">
-                <img src="{{ asset('images/mg-bg.jpg') }}" alt="ثبت نام ام جی" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <img src="{{ asset('images/mg.png') }}" alt="ثبت نام ام جی" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent"></div>
                 <div class="absolute inset-0 p-6 flex flex-col justify-end">
                     <div class="flex items-center justify-between">
