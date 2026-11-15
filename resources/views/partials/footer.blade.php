@@ -1,6 +1,8 @@
-<footer class="bg-slate-900 text-slate-300 pt-16 pb-8 px-6 border-t border-slate-800">
-    <div class="max-w-7xl mx-auto">
 
+<footer class="bg-slate-900 text-slate-300 pt-16 pb-8 px-6 md:px-12 lg:px-20 border-t border-slate-800">
+
+    <div class="max-w-[1400px] mx-auto">
+        <x-consultation />
 
         <!-- بخش اصلی فوتر -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
@@ -105,3 +107,12 @@
 
     </div>
 </footer>
+
+
+
+
+
+
+
+
+

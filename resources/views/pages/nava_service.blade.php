@@ -97,7 +97,7 @@
             <p class="text-slate-500 text-lg mb-12 max-w-2xl mx-auto">ما در کنار شما هستیم تا خودروی شما همیشه در بهترین وضعیت باشد.</p>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-8 bg-slate-50 rounded-3xl">"C:\Program Files\Git\bin\bash.exe" --login -i
+                <div class="p-8 bg-slate-50 rounded-3xl">
                     <div class="text-4xl mb-4">🛡️</div>
                     <h3 class="text-xl font-bold text-slate-800 mb-2">ضمانت اصالت</h3>
                     <p class="text-slate-500 text-base">تمامی قطعات ارائه شده در نواسرویس دارای ضمانت اصالت و سلامت فیزیکی هستند.</p>
@@ -114,5 +114,7 @@
                 </div>
             </div>
         </div>
+        <!-- بخش 4: برندها -->
+        <x-brands />
     </section>
 @endsection
