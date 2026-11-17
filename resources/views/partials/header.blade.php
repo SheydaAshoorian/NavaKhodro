@@ -3,9 +3,21 @@
         <div class="flex items-center justify-between h-20">
 
             <!-- لوگو -->
-            <a href="{{ route('home') }}" class="flex-shrink-0">
-                <img src="{{ asset('images/logo.png') }}" alt="نواخودرو" class="h-12 w-auto">
-            </a>
+            <!-- لوگو -->
+            <div class="flex-shrink-0 flex items-center gap-3">
+                @if(request()->is('service/*') || request()->routeIs('nava_service'))
+                    {{-- وقتی در صفحات نواسرویس هستیم --}}
+
+                    <a href="{{ route('nava_service') }}" class="flex items-center gap-2">
+                        <img src="{{ asset('images/logo.png') }}" alt="نواسرویس" class="h-10 w-auto object-contain">
+                    </a>
+                @else
+                    {{-- حالت عادی (صفحات نواخودرو) --}}
+                    <a href="{{ route('home') }}" class="opacity-80 hover:opacity-100 transition-opacity">
+                        <img src="{{ asset('images/navakhodro-logo.jpg') }}" alt="نواخودرو" class="h-8 w-auto object-contain">
+                    </a>
+                @endif
+            </div>
 
             <!-- منوی دسکتاپ -->
             <nav class="hidden lg:flex items-center gap-1 h-full">
