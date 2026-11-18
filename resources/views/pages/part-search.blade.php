@@ -7,8 +7,7 @@
     <x-hero />
 
     <!-- محتوای اصلی -->
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-20 pb-20">
-
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 relative z-20 pb-20">
         <!-- باکس راهنما (اولیه) -->
         <div id="initialState" class="bg-white rounded-3xl p-10 text-center border border-dashed border-slate-300 shadow-sm mb-8">
             <div class="text-5xl mb-4">🔍</div>
@@ -129,6 +128,8 @@
             </div>
         </div>
     </div>
+    <!-- بخش 4: برندها -->
+    <x-brands />
 @endsection
 
 @push('scripts')

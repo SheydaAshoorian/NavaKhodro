@@ -1,0 +1,19 @@
+if (typeof $ == 'undefined')
+	var $ = jQuery;
+
+$(function(){
+	$('.header-search-button').click(function(e) {
+		$('.header-search').css({"display": "flex"});
+		e.preventDefault();
+	});
+	$('.header-search-close').click(function(e) {
+		$('.header-search').css({"display": "none"});
+		e.preventDefault();
+	});
+
+	//  compare
+    $('.store-compare-product-add').on('click', function() {
+
+        $('.store-compare-quicksearch-query-input').focus();
+    });
+});
