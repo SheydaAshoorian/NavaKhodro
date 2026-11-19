@@ -7,6 +7,7 @@
         <!-- بخش اصلی فوتر -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
 
+
             <!-- ستون ۱: راه‌های ارتباط با نواخودرو -->
             <div>
                 <h3 class="text-white font-black text-lg mb-6">راه‌های ارتباط با نواخودرو</h3>

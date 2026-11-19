@@ -3,7 +3,6 @@
         <div class="flex items-center justify-between h-20">
 
             <!-- لوگو -->
-            <!-- لوگو -->
             <div class="flex-shrink-0 flex items-center gap-3">
                 @if(request()->is('service/*') || request()->routeIs('nava_service'))
                     {{-- وقتی در صفحات نواسرویس هستیم --}}
@@ -226,6 +225,13 @@
                     </div>
                 </div>
 
+                <!-- خرید موتور سیکلت  -->
+                <div class="relative group h-full flex items-center">
+                    <button class="flex items-center gap-1 px-4 py-2 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition">
+                        خرید موتورسیکلت
+                    </button>
+                </div>
+
                 <!-- نواسرویس (منوی کشویی) -->
                 <div class="relative group h-full flex items-center">
                     <button class="flex items-center gap-1 px-4 py-2 text-sm font-bold text-blue-600 bg-blue-50 rounded-xl transition">
@@ -235,13 +241,9 @@
                     </button>
                     <div class="absolute top-full left-0 pt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                         <div class="bg-white rounded-2xl shadow-xl border border-slate-100 p-2 flex flex-col gap-1">
-                            <a href="{{ route('nava_service') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition">داشبورد نواسرویس</a>
-                            <a href="{{ route('part-search') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition">جستجوی قطعه</a>
-                            <a href="{{ route('booking') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition">ثبت نوبت تعمیرگاهی</a>
-                            <a href="{{ route('track-car') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition">پیگیری خودرو</a>
-                            <a href="{{ route('track-order') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition">پیگیری سفارشات</a>
-                            <a href="{{ route('car-info') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition">اطلاعات خودرو</a>
-                            <a href="{{ route('complaints') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition">شکایات</a>
+                            <a href="{{ route('buy') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition"> قطعات </a>
+                            <a href="{{ route('nava_service') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition"> تعمیرگاه و خدمات پس از فروش </a>
+
                         </div>
                     </div>
                 </div>
@@ -274,14 +276,58 @@
 
             </nav>
 
-            <!-- دکمه CTA و منوی موبایل -->
-            <div class="flex items-center gap-4">
-                <a href="#" class="hidden lg:block bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold py-2.5 px-6 rounded-full transition shadow-lg shadow-blue-500/30">تماس با ما</a>
+            <!-- دکمه CTA و آیکون‌های کاربر -->
+            <div class="flex items-center gap-3">
+                <!-- دکمه تماس با ما -->
+                <a href="{{ route('nava_service') }}#contact" class="hidden lg:inline-flex items-center justify-center px-6 py-2.5 border border-transparent text-sm font-semibold rounded-full text-white bg-blue-600 hover:bg-blue-700 shadow-sm hover:shadow transition-all duration-200 whitespace-nowrap">
+                    تماس با ما
+                </a>
+                <!-- سبد خرید -->
+                <a href="#" class="relative p-2.5 text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-xl transition-all group">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                    <!-- نشانگر تعداد (Badge) -->
+                    <span class="absolute top-1.5 right-1.5 bg-red-500 text-white text-[10px] font-black w-4 h-4 flex items-center justify-center rounded-full border-2 border-white">2</span>
+                </a>
+
+                <!-- پروفایل مشتری (منوی کشویی) -->
+                <div class="relative group h-full flex items-center">
+                    <button class="flex items-center gap-2 p-2.5 text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-xl transition-all">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                        </svg>
+                        <span class="text-sm font-bold hidden xl:block">حساب کاربری</span>
+                    </button>
+
+                    <!-- منوی کشویی پروفایل -->
+                    <div class="absolute top-full left-0 pt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <div class="bg-white rounded-2xl shadow-xl border border-slate-100 p-2 flex flex-col gap-1">
+                            <div class="px-4 py-3 border-b border-slate-100 mb-1">
+                                <p class="text-sm font-black text-slate-800">علی رضایی</p>
+                                <p class="text-xs text-slate-500 mt-0.5" dir="ltr">۰۹۱۲۳۴۵۶۷۸۹</p>
+                            </div>
+                            <a href="#" class="block px-4 py-2.5 text-sm font-bold text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-colors">
+                                اکانت من
+                            </a>
+                            <a href="#" class="block px-4 py-2.5 text-sm font-bold text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-colors">
+                                لیست سفارشات
+                            </a>
+                            <div class="border-t border-slate-100 mt-1 pt-1">
+                                <a href="#" class="block px-4 py-2.5 text-sm font-bold text-red-600 hover:text-red-700 hover:bg-red-50 rounded-xl transition-colors flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
+                                    خروج
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
 
                 <!-- دکمه منوی موبایل -->
-                <button @click="mobileMenuOpen = !mobileMenuOpen" class="lg:hidden text-slate-700 p-2 hover:bg-slate-100 rounded-lg transition">
-                    <svg x-show="!mobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                    <svg x-show="mobileMenuOpen" style="display: none;" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                <button class="lg:hidden p-2 text-slate-600 hover:bg-slate-100 rounded-lg" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                 </button>
             </div>
 
