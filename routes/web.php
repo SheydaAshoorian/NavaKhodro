@@ -15,3 +15,6 @@ Route::view('/service/track-car', 'pages.track-car')->name('track-car');
 Route::view('/service/track-order', 'pages.track-order')->name('track-order');
 Route::view('/service/car-info', 'pages.car-info')->name('car-info');
 Route::view('/service/complaints', 'pages.complaints')->name('complaints');
+Route::view('/service/shop', 'pages.shop')->name('shop');
+Route::view('/service/repair', 'pages.repair')->name('repair');
+

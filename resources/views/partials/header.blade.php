@@ -234,18 +234,22 @@
 
                 <!-- نواسرویس (منوی کشویی) -->
                 <div class="relative group h-full flex items-center">
-                    <button class="flex items-center gap-1 px-4 py-2 text-sm font-bold text-blue-600 bg-blue-50 rounded-xl transition">
-                        نواسرویس
-                        <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                    </button>
-                    <div class="absolute top-full left-0 pt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                    <a href="{{ route('nava_service') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition">
+                        <button class="flex items-center gap-1 px-4 py-2 text-sm font-bold text-blue-600 bg-blue-50 rounded-xl transition">
+                            نواسرویس
+                            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute top-full left-0 pt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                         <div class="bg-white rounded-2xl shadow-xl border border-slate-100 p-2 flex flex-col gap-1">
-                            <a href="{{ route('buy') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition"> قطعات </a>
-                            <a href="{{ route('nava_service') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition"> تعمیرگاه و خدمات پس از فروش </a>
+                            <a href="{{ route('part-search') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition"> جسنجوی قطعه  </a>
+                            <a href="{{ route('buy') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition"> فروشگاه قطعات  </a>
+                            <a href="{{ route('track-order') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition"> وضعیت درخواست / پیگیری سفارش   </a>
+                            <a href="{{ route('repair') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition"> تعمیرگاه و خدمات پس از فروش </a>
+                        </div>
 
                         </div>
-                    </div>
+                     </a>
                 </div>
 
                 <!-- نمایندگی‌ها و شعب -->
