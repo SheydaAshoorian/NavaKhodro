@@ -3,6 +3,8 @@
 @section('title', 'فروشگاه قطعات و اکسسوری خودرو | نواسرویس')
 
 @section('content')
+    <!-- بنر (Hero) -->
+    <x-hero />
     <div class="max-w-[1300px] mx-auto px-4 md:px-8 py-6">
         <x-categories />
         <!-- ۲. پیشنهاد شگفت‌انگیز (با تم آبی) -->
@@ -14,7 +16,7 @@
             </div>
             <div class="p-4 flex-1 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                 <!-- محصول ۱ -->
-                <a href="#" class="group block">
+                <a href="{{route("product-detail")}}" class="group block">
                     <div class="h-28 bg-slate-50 rounded-xl mb-2 overflow-hidden">
                         <img src="{{asset('images/ch.jpg')}}" class="w-full h-full object-cover group-hover:scale-105 transition-transform" alt="چراغ">
                     </div>

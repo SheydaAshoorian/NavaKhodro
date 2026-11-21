@@ -49,14 +49,11 @@
                             <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-blue-600 rounded"> روشنایی</label>
                         </div>
                     </div>
-
-
                 </div>
             </aside>
 
             <!-- بخش لیست محصولات (سمت چپ) -->
             <main class="flex-1 w-full">
-
                 <!-- نوار مرتب‌سازی -->
                 <div class="bg-white rounded-xl border border-slate-200 p-3 flex items-center justify-between mb-6 shadow-sm">
                     <div class="text-sm text-slate-500 hidden sm:block">۶ کالا</div>

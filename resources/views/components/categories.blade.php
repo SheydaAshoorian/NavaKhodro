@@ -35,17 +35,17 @@
                 <span class="text-xs font-bold text-slate-700 text-center leading-tight">لاستیک و رینگ</span>
             </a>
             <!-- دسته ۵ -->
-            <a href="#" class="flex flex-col items-center justify-center min-w-[160px] w-[180px] h-[160px] border border-slate-200 rounded-xl hover:shadow-md hover:border-blue-300 transition-all bg-white p-3 group/cat">
+            <a href="{{ route('oils') }}" class="flex flex-col items-center justify-center min-w-[160px] w-[180px] h-[160px] border border-slate-200 rounded-xl hover:shadow-md hover:border-blue-300 transition-all bg-white p-3 group/cat">
                 <img src="{{asset('images/rr.jpg')}}" alt="روغن و مایعات" >
                 <span class="text-xs font-bold text-slate-700 text-center leading-tight">روغن و مایعات</span>
             </a>
             <!-- دسته ۶ -->
-            <a href="#" class="flex flex-col items-center justify-center min-w-[160px] w-[180px] h-[160px] border border-slate-200 rounded-xl hover:shadow-md hover:border-blue-300 transition-all bg-white p-3 group/cat">
+            <a href="{{ route('tools') }}" class="flex flex-col items-center justify-center min-w-[160px] w-[180px] h-[160px] border border-slate-200 rounded-xl hover:shadow-md hover:border-blue-300 transition-all bg-white p-3 group/cat">
                 <img src="{{asset('images/tt.jpg')}}" alt="ابزار و تجهیزات" >
                 <span class="text-xs font-bold text-slate-700 text-center leading-tight">ابزار و تجهیزات</span>
             </a>
             <!-- دسته ۷ -->
-            <a href="#" class="flex flex-col items-center justify-center min-w-[160px] w-[180px] h-[160px] border border-slate-200 rounded-xl hover:shadow-md hover:border-blue-300 transition-all bg-white p-3 group/cat">
+            <a href="{{ route('accessories') }}" class="flex flex-col items-center justify-center min-w-[160px] w-[180px] h-[160px] border border-slate-200 rounded-xl hover:shadow-md hover:border-blue-300 transition-all bg-white p-3 group/cat">
                 <img src="{{asset('images/jj.jpg')}}" alt="لوازم جانبی" >
                 <span class="text-xs font-bold text-slate-700 text-center leading-tight">لوازم جانبی خودرو</span>
             </a>
