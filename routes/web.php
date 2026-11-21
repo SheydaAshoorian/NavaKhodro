@@ -10,7 +10,7 @@ Route::view('/blog', 'pages.blog')->name('blog');
 Route::view('/checkout', 'pages.checkout')->name('checkout');
 Route::view('/payment', 'pages.payment')->name('payment');
 Route::view('/invoice', 'pages.invoice')->name('invoice');
-
+Route::view('/cart', 'pages.cart')->name('cart');
 
 
 Route::view('/nava_service', 'pages.nava_service')->name('nava_service');

@@ -287,13 +287,12 @@
                     تماس با ما
                 </a>
                 <!-- سبد خرید -->
-                <a href="#" class="relative p-2.5 text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-xl transition-all group">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <button onclick="openCartDrawer()" class="relative p-2.5 text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-xl transition-all group">                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
                     </svg>
                     <!-- نشانگر تعداد (Badge) -->
                     <span class="absolute top-1.5 right-1.5 bg-red-500 text-white text-[10px] font-black w-4 h-4 flex items-center justify-center rounded-full border-2 border-white">2</span>
-                </a>
+                </button>
 
                 <!-- پروفایل مشتری (منوی کشویی) -->
                 <div class="relative group h-full flex items-center">
@@ -326,8 +325,6 @@
                         </div>
                     </div>
                 </div>
-
-
 
                 <!-- دکمه منوی موبایل -->
                 <button class="lg:hidden p-2 text-slate-600 hover:bg-slate-100 rounded-lg" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">
