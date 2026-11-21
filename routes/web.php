@@ -13,7 +13,7 @@ Route::view('/invoice', 'pages.invoice')->name('invoice');
 Route::view('/cart', 'pages.cart')->name('cart');
 Route::view('/contact', 'pages.contact')->name('contact');
 Route::view('/about', 'pages.about')->name('about');
-
+Route::view('/employment', 'pages.employment')->name('employment');
 
 
 

@@ -269,8 +269,8 @@
                     </button>
                     <div class="absolute top-full left-0 pt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                         <div class="bg-white rounded-2xl shadow-xl border border-slate-100 p-2 flex flex-col gap-1">
-                            <a href="{{ route('about') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition">درباره ما</a>درباره ما</a>
-                            <a href="#" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition">استخدام</a>
+                            <a href="{{ route('about') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition">درباره ما</a>
+                            <a href="{{ route('employment') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition">استخدام</a>
                             <a href="#" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition">شکایات مشتری</a>
                             <a href="#" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition">عضویت در اطلاع‌رسانی</a>
                         </div>
