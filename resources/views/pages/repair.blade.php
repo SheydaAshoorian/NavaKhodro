@@ -72,32 +72,34 @@
         </div>
 
 
-        <!-- ۵. خدمات و تضمین‌ها -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-            <div class="bg-white rounded-2xl border border-slate-200 p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-                <span class="text-3xl block mb-2">🚚</span>
-                <h4 class="text-sm font-bold text-slate-800">تعمیرگاه های مجاز برای هر برند </h4>
-            </div>
-            <div class="bg-white rounded-2xl border border-slate-200 p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-                <span class="text-3xl block mb-2">🛡️</span>
-                <h4 class="text-sm font-bold text-slate-800">خدمات صافکاری و نقاشی</h4>
-            </div>
-            <div class="bg-white rounded-2xl border border-slate-200 p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-                <span class="text-3xl block mb-2">🔄</span>
-                <h4 class="text-sm font-bold text-slate-800">سرویس های دوره ایی</h4>
-            </div>
-            <div class="bg-white rounded-2xl border border-slate-200 p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-                <span class="text-3xl block mb-2">📞</span>
-                <h4 class="text-sm font-bold text-slate-800">دیتیلینگ</h4>
-            </div>
-        </div>
-
 
         <!-- ۶. بخش توضیحات و سئو (مثل دیجی‌کالا) -->
         <div class="bg-white rounded-2xl border border-slate-200 p-6 md:p-8 shadow-sm mt-8">
             <h2 class="text-xl font-black text-slate-800 mb-4 pb-3 border-b border-slate-100">خدمات تخصصی تعمیرگاه نواسرویس</h2>
 
             <div class="space-y-6 text-sm text-slate-600 leading-relaxed text-justify">
+
+
+                <!-- ۵. خدمات و تضمین‌ها -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                    <div class="bg-white rounded-2xl border border-slate-200 p-4 text-center shadow-sm hover:shadow-md transition-shadow">
+                        <span class="text-3xl block mb-2">🚚</span>
+                        <h4 class="text-sm font-bold text-slate-800">تعمیرگاه های مجاز برای هر برند </h4>
+                    </div>
+                    <div class="bg-white rounded-2xl border border-slate-200 p-4 text-center shadow-sm hover:shadow-md transition-shadow">
+                        <span class="text-3xl block mb-2">🛡️</span>
+                        <h4 class="text-sm font-bold text-slate-800">خدمات صافکاری و نقاشی</h4>
+                    </div>
+                    <div class="bg-white rounded-2xl border border-slate-200 p-4 text-center shadow-sm hover:shadow-md transition-shadow">
+                        <span class="text-3xl block mb-2">🔄</span>
+                        <h4 class="text-sm font-bold text-slate-800">سرویس های دوره ایی</h4>
+                    </div>
+                    <div class="bg-white rounded-2xl border border-slate-200 p-4 text-center shadow-sm hover:shadow-md transition-shadow">
+                        <span class="text-3xl block mb-2">📞</span>
+                        <h4 class="text-sm font-bold text-slate-800">دیتیلینگ</h4>
+                    </div>
+                </div>
+
                 <p>
                     مجموعه <strong>نواسرویس</strong> با بهره‌گیری از مجهزترین تجهیزات و متخصصان مجرب، آماده ارائه خدمات جامع تعمیرگاهی و سرویس دوره‌ای به خودروی شماست. ما در نواسرویس می‌دانیم که سلامت خودرو شما، یعنی آرامش خاطر شما. بنابراین تمامی خدمات را با بالاترین استانداردها و با استفاده از قطعات اصلی انجام می‌دهیم.
                 </p>

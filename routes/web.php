@@ -32,3 +32,5 @@ Route::view('/service/tools', 'pages.tools')->name('tools');
 Route::view('/service/oils', 'pages.oils')->name('oils');
 Route::view('/service/product', 'pages.product-detail')->name('product-detail');
 Route::view('/service/booking', 'pages.booking')->name('booking');
+Route::view('/service/car-info', 'pages.car-info')->name('car-info');
+Route::view('/service/car-details', 'pages.car-details')->name('car-details');
