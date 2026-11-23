@@ -31,3 +31,4 @@ Route::view('/accessories', 'pages.accessories')->name('accessories');
 Route::view('/service/tools', 'pages.tools')->name('tools');
 Route::view('/service/oils', 'pages.oils')->name('oils');
 Route::view('/service/product', 'pages.product-detail')->name('product-detail');
+Route::view('/service/booking', 'pages.booking')->name('booking');
