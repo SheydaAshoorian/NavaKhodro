@@ -243,7 +243,7 @@
                         <div class="absolute top-full left-0 pt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                         <div class="bg-white rounded-2xl shadow-xl border border-slate-100 p-2 flex flex-col gap-1">
                             <a href="{{ route('repair') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition"> تعمیرگاه و خدمات پس از فروش </a>
-                            <a href="{{ route('buy') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition"> فروشگاه قطعات  </a>
+                            <a href="{{ route('brands') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition"> فروشگاه قطعات  </a>
                             <a href="{{ route('part-search') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition"> جسنجوی قطعه  </a>
                             <a href="{{ route('track-order') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition"> وضعیت درخواست / پیگیری سفارش   </a>
                         </div>

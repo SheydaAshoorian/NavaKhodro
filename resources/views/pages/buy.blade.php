@@ -6,6 +6,8 @@
     <!-- بنر (Hero) -->
     <x-hero />
     <div class="max-w-[1300px] mx-auto px-4 md:px-8 py-6">
+        <x-brands />
+
         <x-categories />
         <!-- ۲. پیشنهاد شگفت‌انگیز (با تم آبی) -->
         <div class="bg-white rounded-2xl border border-slate-200 shadow-sm mb-6 overflow-hidden flex flex-col md:flex-row">
