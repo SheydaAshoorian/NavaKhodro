@@ -15,7 +15,7 @@ Route::view('/contact', 'pages.contact')->name('contact');
 Route::view('/about', 'pages.about')->name('about');
 Route::view('/employment', 'pages.employment')->name('employment');
 Route::view('/complaints', 'pages.complaints')->name('complaints');
-
+Route::view('/subscribe', 'pages.subscribe')->name('subscribe');
 
 
 Route::view('/nava_service', 'pages.nava_service')->name('nava_service');

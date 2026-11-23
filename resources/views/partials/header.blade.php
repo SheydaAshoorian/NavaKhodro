@@ -272,7 +272,7 @@
                             <a href="{{ route('about') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition">درباره ما</a>
                             <a href="{{ route('employment') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition">استخدام</a>
                             <a href="{{ route('complaints') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition">شکایات مشتری</a>
-                            <a href="#" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition">عضویت در اطلاع‌رسانی</a>
+                            <a href="{{ route('subscribe') }}" class="block px-4 py-2.5 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition">عضویت در اطلاع‌رسانی</a>
                         </div>
                     </div>
                 </div>
