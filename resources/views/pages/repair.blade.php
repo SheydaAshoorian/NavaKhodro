@@ -71,34 +71,11 @@
             </div>
         </div>
 
-
-
-        <!-- ۶. بخش توضیحات و سئو (مثل دیجی‌کالا) -->
+        <!-- ۶. بخش توضیحات و سئو -->
         <div class="bg-white rounded-2xl border border-slate-200 p-6 md:p-8 shadow-sm mt-8">
             <h2 class="text-xl font-black text-slate-800 mb-4 pb-3 border-b border-slate-100">خدمات تخصصی تعمیرگاه نواسرویس</h2>
 
             <div class="space-y-6 text-sm text-slate-600 leading-relaxed text-justify">
-
-
-                <!-- ۵. خدمات و تضمین‌ها -->
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                    <div class="bg-white rounded-2xl border border-slate-200 p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-                        <span class="text-3xl block mb-2">🚚</span>
-                        <h4 class="text-sm font-bold text-slate-800">تعمیرگاه های مجاز برای هر برند </h4>
-                    </div>
-                    <div class="bg-white rounded-2xl border border-slate-200 p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-                        <span class="text-3xl block mb-2">🛡️</span>
-                        <h4 class="text-sm font-bold text-slate-800">خدمات صافکاری و نقاشی</h4>
-                    </div>
-                    <div class="bg-white rounded-2xl border border-slate-200 p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-                        <span class="text-3xl block mb-2">🔄</span>
-                        <h4 class="text-sm font-bold text-slate-800">سرویس های دوره ایی</h4>
-                    </div>
-                    <div class="bg-white rounded-2xl border border-slate-200 p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-                        <span class="text-3xl block mb-2">📞</span>
-                        <h4 class="text-sm font-bold text-slate-800">دیتیلینگ</h4>
-                    </div>
-                </div>
 
                 <p>
                     مجموعه <strong>نواسرویس</strong> با بهره‌گیری از مجهزترین تجهیزات و متخصصان مجرب، آماده ارائه خدمات جامع تعمیرگاهی و سرویس دوره‌ای به خودروی شماست. ما در نواسرویس می‌دانیم که سلامت خودرو شما، یعنی آرامش خاطر شما. بنابراین تمامی خدمات را با بالاترین استانداردها و با استفاده از قطعات اصلی انجام می‌دهیم.
@@ -119,6 +96,15 @@
                     با عضویت در سیستم نواسرویس، به آرشیوی از تمام سرویس‌ها و تعمیرات انجام شده بر روی خودروی خود دسترسی خواهید داشت. این اطلاعات ارزشمند نه تنها برای نگهداری بهتر خودرو مفید است، بلکه در زمان فروش نیز می‌تواند ارزش خودروی شما را افزایش دهد.
                 </p>
 
+                <!-- بخش خدمات تخصصی (به صورت متن جایگزین کارت‌ها) -->
+                <h3 class="text-lg font-bold text-slate-800 mt-6 mb-3">خدمات تخصصی ما شامل:</h3>
+                <ul class="list-disc list-inside space-y-3 pr-2 text-slate-600">
+                    <li><strong>تعمیرگاه‌های مجاز برای هر برند:</strong> با همکاری با برندهای معتبر خودرویی، خدمات تعمیراتی تخصصی را مطابق با استانداردهای کارخانه ارائه می‌دهیم.</li>
+                    <li><strong>خدمات صافکاری و نقاشی:</strong> رفع ضربه‌خوردگی، رنگ‌آمیزی و بازسازی بدنه با استفاده از بهترین متریال و تجهیزات روز.</li>
+                    <li><strong>سرویس‌های دوره‌ای:</strong> انجام سرویس‌های منظم و پیشگیرانه برای حفظ عملکرد بهینه خودرو و افزایش طول عمر آن.</li>
+                    <li><strong>دیتیلینگ خودرو:</strong> شامل پولیش، سرامیک، نظافت داخلی و خارجی با دقت بالا برای جلوه‌ای نو و درخشان.</li>
+                </ul>
+
                 <h3 class="text-lg font-bold text-slate-800 mt-6 mb-3">تعهد ما به کیفیت و رضایت شما</h3>
                 <ul class="list-disc list-inside space-y-2 pr-2">
                     <li><strong>تضمین کیفیت:</strong> تمامی خدمات با ضمانت و پشتیبانی کامل ارائه می‌شوند.</li>
@@ -126,6 +112,7 @@
                     <li><strong>قیمت شفاف:</strong> هزینه‌ها پیش از شروع کار به طور کامل به شما اعلام می‌شود.</li>
                     <li><strong>پرسنل متخصص:</strong> تیم فنی ما از میان مجرب‌ترین متخصصان صنعت خودرو انتخاب شده‌اند.</li>
                 </ul>
+
                 <p class="mt-4">
                     ما در نواسرویس همواره در تلاشیم تا تجربه‌ای متفاوت و لذت‌بخش از نگهداری خودرو را برای شما رقم بزنیم. با ما همراه باشید و مطمئن باشید که خودروی شما در بهترین دست‌هاست.
                 </p>
