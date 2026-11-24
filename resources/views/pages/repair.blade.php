@@ -119,4 +119,6 @@
             </div>
         </div>
     </div>
+    <x-brands />
+
 @endsection
