@@ -25,62 +25,87 @@
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             <!-- برند ۱ -->
             <a href="{{ route('brand-products', ['brand' => 'MVM']) }}" class="bg-slate-50 rounded-2xl border border-slate-200 p-6 flex flex-col items-center justify-center hover:shadow-md hover:border-blue-300 hover:bg-white transition-all group">
-                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">🚗</span>
+                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">
+                    <img src="{{asset('images/mvm.jpg')}}" />
+                </span>
                 <span class="text-sm font-bold text-slate-700">ام وی ام (MVM)</span>
             </a>
             <!-- برند ۲ -->
             <a href="{{ route('brand-products', ['brand' => 'Fownix']) }}" class="bg-slate-50 rounded-2xl border border-slate-200 p-6 flex flex-col items-center justify-center hover:shadow-md hover:border-blue-300 hover:bg-white transition-all group">
-                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">🚙</span>
+                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">
+                    <img src="{{asset('images/fonix.png')}}" />
+                </span>
                 <span class="text-sm font-bold text-slate-700">فونیکس (Fownix)</span>
             </a>
             <!-- برند ۳ -->
             <a href="{{ route('brand-products', ['brand' => 'FMC']) }}" class="bg-slate-50 rounded-2xl border border-slate-200 p-6 flex flex-col items-center justify-center hover:shadow-md hover:border-blue-300 hover:bg-white transition-all group">
-                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">🚐</span>
+                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">
+
+                    <img src="{{asset('images/fmc.png')}}" />
+                </span>
                 <span class="text-sm font-bold text-slate-700">فردا موتورز (FMC)</span>
             </a>
             <!-- برند ۴ -->
             <a href="{{ route('brand-products', ['brand' => 'KMC']) }}" class="bg-slate-50 rounded-2xl border border-slate-200 p-6 flex flex-col items-center justify-center hover:shadow-md hover:border-blue-300 hover:bg-white transition-all group">
-                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">🚕</span>
+                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">
+                    <img src="{{asset('images/fonix.png')}}" />
+                </span>
                 <span class="text-sm font-bold text-slate-700">کرمان موتور (KMC)</span>
             </a>
             <!-- برند ۵ -->
             <a href="{{ route('brand-products', ['brand' => 'Hyundai']) }}" class="bg-slate-50 rounded-2xl border border-slate-200 p-6 flex flex-col items-center justify-center hover:shadow-md hover:border-blue-300 hover:bg-white transition-all group">
-                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">🚘</span>
+                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">
+                    <img src="{{asset('images/hyundai.webp')}}" />
+                </span>
                 <span class="text-sm font-bold text-slate-700">هیوندای (Hyundai)</span>
             </a>
             <!-- برند ۶ -->
             <a href="{{ route('brand-products', ['brand' => 'BMW']) }}" class="bg-slate-50 rounded-2xl border border-slate-200 p-6 flex flex-col items-center justify-center hover:shadow-md hover:border-blue-300 hover:bg-white transition-all group">
-                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">🏎️</span>
+                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">
+                        <img src="{{asset('images/hyundai.webp')}}" />
+                </span>
                 <span class="text-sm font-bold text-slate-700">بی ام و (BMW)</span>
             </a>
             <!-- برند ۷ -->
             <a href="{{ route('brand-products', ['brand' => 'MG']) }}" class="bg-slate-50 rounded-2xl border border-slate-200 p-6 flex flex-col items-center justify-center hover:shadow-md hover:border-blue-300 hover:bg-white transition-all group">
-                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">🚗</span>
+                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">
+                    <img src="{{asset('images/MG.png')}}" />
+                </span>
                 <span class="text-sm font-bold text-slate-700">ام جی (MG)</span>
             </a>
             <!-- برند ۸ -->
             <a href="{{ route('brand-products', ['brand' => 'Jetta']) }}" class="bg-slate-50 rounded-2xl border border-slate-200 p-6 flex flex-col items-center justify-center hover:shadow-md hover:border-blue-300 hover:bg-white transition-all group">
-                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">🚙</span>
+                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">
+                    <img src="{{asset('images/jetta.webp')}}" />
+                </span>
                 <span class="text-sm font-bold text-slate-700">جتا (Jetta)</span>
             </a>
             <!-- برند ۹ -->
             <a href="{{ route('brand-products', ['brand' => 'Geely']) }}" class="bg-slate-50 rounded-2xl border border-slate-200 p-6 flex flex-col items-center justify-center hover:shadow-md hover:border-blue-300 hover:bg-white transition-all group">
-                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">🚐</span>
+                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">
+                     <img src="{{asset('images/geely.webp')}}" />
+                </span>
                 <span class="text-sm font-bold text-slate-700">جیلی (Geely)</span>
             </a>
             <!-- برند ۱۰ -->
             <a href="{{ route('brand-products', ['brand' => 'Kia']) }}" class="bg-slate-50 rounded-2xl border border-slate-200 p-6 flex flex-col items-center justify-center hover:shadow-md hover:border-blue-300 hover:bg-white transition-all group">
-                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">🚕</span>
+                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">
+                    <img src="{{asset('images/kia.webp')}}" />
+                </span>
                 <span class="text-sm font-bold text-slate-700">کیا (Kia)</span>
             </a>
             <!-- برند ۱۱ -->
             <a href="{{ route('brand-products', ['brand' => 'Mazda']) }}" class="bg-slate-50 rounded-2xl border border-slate-200 p-6 flex flex-col items-center justify-center hover:shadow-md hover:border-blue-300 hover:bg-white transition-all group">
-                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">🚘</span>
+                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">
+                    <img src="{{asset('images/mazda.webp')}}" />
+                </span>
                 <span class="text-sm font-bold text-slate-700">مزدا (Mazda)</span>
             </a>
             <!-- برند ۱۲ -->
             <a href="{{ route('brand-products', ['brand' => 'BYD']) }}" class="bg-slate-50 rounded-2xl border border-slate-200 p-6 flex flex-col items-center justify-center hover:shadow-md hover:border-blue-300 hover:bg-white transition-all group">
-                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">🏎️</span>
+                <span class="text-4xl mb-3 group-hover:scale-110 transition-transform">
+                    <img src="{{asset('images/byd.jpg')}}" />
+                 ️</span>
                 <span class="text-sm font-bold text-slate-700">بی وای دی (BYD)</span>
             </a>
         </div>
