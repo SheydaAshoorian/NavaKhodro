@@ -19,32 +19,68 @@
             <!-- سایدبار فیلترها (سمت راست) -->
             <aside class="w-full lg:w-72 flex-shrink-0 bg-white rounded-2xl border border-slate-200 p-5 sticky top-24 shadow-sm">
                 <div class="flex justify-between items-center mb-5 pb-4 border-b border-slate-100">
-                    <h3 class="text-base font-black text-slate-800">فیلترها</h3>
-                    <button class="text-xs text-blue-600 font-bold hover:text-blue-800">حذف همه</button>
+                    <h3 class="text-base font-black text-slate-800 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                        فیلتر قطعات
+                    </h3>
+                    <button onclick="resetFilters()" class="text-xs text-blue-600 font-bold hover:text-blue-800">پاک کردن</button>
                 </div>
 
-                <div class="space-y-6">
-                    <!-- دسته‌بندی -->
+                <div class="space-y-5">
+                    <!-- برند -->
                     <div>
-                        <h4 class="text-sm font-bold text-slate-800 mb-3">دسته‌بندی</h4>
-                        <div class="space-y-2">
-                            <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-blue-600 rounded"> قطعات موتوری</label>
-                            <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-blue-600 rounded"> قطعات بدنه</label>
-                            <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer"><input type="checkbox" class="accent-blue-600 rounded"> سیستم ترمز</label>
-                        </div>
+                        <label class="text-sm font-bold text-slate-800 mb-2 block">برند خودرو</label>
+                        <select id="brandSelect" onchange="onBrandChange()" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-sm font-semibold outline-none focus:border-blue-500">
+                            <option value="">انتخاب کنید...</option>
+                            <option value="BMW">BMW</option>
+                            <option value="مدیران خودرو">مدیران خودرو</option>
+                            <option value="کرمان موتور">کرمان موتور</option>
+                            <option value="ایرتویا">ایرتویا</option>
+                            <option value="هیوندای">هیوندای</option>
+                            <option value="بنز">بنز</option>
+                        </select>
                     </div>
 
-                    <!-- محدوده قیمت -->
+                    <!-- مدل -->
                     <div>
-                        <h4 class="text-sm font-bold text-slate-800 mb-3">محدوده قیمت (تومان)</h4>
-                        <div class="flex gap-2 mb-2">
-                            <input type="number" placeholder="از" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-2 py-1.5 text-xs outline-none focus:border-blue-500">
-                            <input type="number" placeholder="تا" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-2 py-1.5 text-xs outline-none focus:border-blue-500">
-                        </div>
+                        <label class="text-sm font-bold text-slate-800 mb-2 block">مدل خودرو</label>
+                        <select id="modelSelect" disabled class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-sm font-semibold outline-none focus:border-blue-500 disabled:opacity-50">
+                            <option value="">اول برند را انتخاب کنید</option>
+                        </select>
                     </div>
+
+                    <!-- سال ساخت -->
+                    <div>
+                        <label class="text-sm font-bold text-slate-800 mb-2 block">سال ساخت</label>
+                        <select id="yearSelect" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-sm font-semibold outline-none focus:border-blue-500">
+                            <option value="">همه سال‌ها</option>
+                            <option value="1404">۱۴۰۴</option>
+                            <option value="1403">۱۴۰۳</option>
+                            <option value="1402">۱۴۰۲</option>
+                            <option value="1401">۱۴۰۱</option>
+                            <option value="1400">۱۴۰۰</option>
+                        </select>
+                    </div>
+
+                    <!-- نام قطعه -->
+                    <div>
+                        <label class="text-sm font-bold text-slate-800 mb-2 block">نام قطعه</label>
+                        <input type="text" id="partNameInput" placeholder="مثال: چراغ جلو" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-sm font-semibold outline-none focus:border-blue-500">
+                    </div>
+
+                    <!-- کد فنی -->
+                    <div>
+                        <label class="text-sm font-bold text-slate-800 mb-2 block">کد فنی (اختیاری)</label>
+                        <input type="text" id="partCodeInput" placeholder="مثال: 63117289123" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-sm font-semibold outline-none focus:border-blue-500" style="direction:ltr; text-align:left;">
+                    </div>
+
+                    <!-- دکمه جستجو -->
+                    <button onclick="doSearch()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-black py-3 rounded-xl shadow-lg shadow-blue-500/20 transition-all mt-4 flex items-center justify-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                        جستجوی قطعه
+                    </button>
                 </div>
             </aside>
-
             <!-- بخش لیست نتایج (سمت چپ) -->
             <main class="flex-1 w-full">
 
@@ -104,4 +140,67 @@
             </main>
         </div>
     </div>
+
+    @push('scripts')
+        <script>
+            // دیتابیس برندها و مدل‌ها
+            const brandModels = {
+                'BMW': ['320i', 'X3', 'X5', '520i'],
+                'مدیران خودرو': ['Tiggo 8', 'Tiggo 7', 'X22'],
+                'کرمان موتور': ['K7', 'K5', 'J4'],
+                'ایرتویا': ['Corolla', 'Camry', 'RAV4'],
+                'هیوندای': ['Tucson', 'Santa Fe', 'Elantra'],
+                'بنز': ['C200', 'E250', 'S500']
+            };
+
+            // تابع تغییر برند و پر کردن مدل‌ها
+            window.onBrandChange = function() {
+                const brand = document.getElementById('brandSelect').value;
+                const modelSelect = document.getElementById('modelSelect');
+
+                modelSelect.innerHTML = '';
+
+                if (!brand) {
+                    modelSelect.innerHTML = '<option value="">اول برند را انتخاب کنید</option>';
+                    modelSelect.disabled = true;
+                    return;
+                }
+
+                modelSelect.disabled = false;
+                modelSelect.innerHTML = '<option value="">انتخاب کنید...</option>';
+
+                const models = brandModels[brand] || [];
+                models.forEach(m => {
+                    const opt = document.createElement('option');
+                    opt.value = m;
+                    opt.textContent = m;
+                    modelSelect.appendChild(opt);
+                });
+            };
+
+            // تابع جستجو (اختیاری - اگر بخواهی فیلتر کنی)
+            window.doSearch = function() {
+                const brand = document.getElementById('brandSelect').value;
+                const model = document.getElementById('modelSelect').value;
+
+                if (!brand || !model) {
+                    alert('لطفاً ابتدا برند و مدل خودرو را انتخاب کنید.');
+                    return;
+                }
+
+                // اینجا می‌توانی منطق فیلتر کردن محصولات را اضافه کنی
+                alert('جستجو برای: ' + brand + ' - ' + model);
+            };
+
+            // تابع پاک کردن فیلترها
+            window.resetFilters = function() {
+                document.getElementById('brandSelect').value = '';
+                document.getElementById('modelSelect').innerHTML = '<option value="">اول برند را انتخاب کنید</option>';
+                document.getElementById('modelSelect').disabled = true;
+                document.getElementById('yearSelect').value = '';
+                document.getElementById('partNameInput').value = '';
+                document.getElementById('partCodeInput').value = '';
+            };
+        </script>
+    @endpush
 @endsection
