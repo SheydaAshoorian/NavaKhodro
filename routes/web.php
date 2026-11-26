@@ -16,6 +16,11 @@ Route::view('/about', 'pages.about')->name('about');
 Route::view('/employment', 'pages.employment')->name('employment');
 Route::view('/complaints', 'pages.complaints')->name('complaints');
 Route::view('/subscribe', 'pages.subscribe')->name('subscribe');
+Route::view('/modirankhodro', 'pages.cars-list')->name('modirankhodro');
+Route::view('/car-sell', 'pages.car-sell')->name('car-sell');
+Route::view('/car-detail', 'pages.car-detail')->name('car-detail');
+Route::view('/car-registration', 'pages.car-registration')->name('car-registration');
+Route::view('/orders', 'pages.orders')->name('orders');
 
 
 Route::view('/nava_service', 'pages.nava_service')->name('nava_service');
