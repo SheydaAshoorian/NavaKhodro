@@ -226,11 +226,14 @@
                 </div>
 
                 <!-- خرید موتور سیکلت  -->
+
+                <a href="{{ route('motorcycles') }}" class="px-4 py-2 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition">
                 <div class="relative group h-full flex items-center">
                     <button class="flex items-center gap-1 px-4 py-2 text-sm font-bold text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition">
                         خرید موتورسیکلت
                     </button>
                 </div>
+                </a>
 
                 <!-- نواسرویس (منوی کشویی) -->
                 <div class="relative group h-full flex items-center">

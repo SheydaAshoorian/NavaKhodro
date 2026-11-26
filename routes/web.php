@@ -21,7 +21,7 @@ Route::view('/car-sell', 'pages.car-sell')->name('car-sell');
 Route::view('/car-detail', 'pages.car-detail')->name('car-detail');
 Route::view('/car-registration', 'pages.car-registration')->name('car-registration');
 Route::view('/orders', 'pages.orders')->name('orders');
-
+Route::view('/motorcycles', 'pages.motorcycles')->name('motorcycles');
 
 Route::view('/nava_service', 'pages.nava_service')->name('nava_service');
 Route::view('/service/part-search', 'pages.part-search')->name('part-search');
